@@ -38,8 +38,8 @@ body {
 .background {
   position: relative; /* Add position relative */
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(#3b82f6, #0091ff);
+  /* background: linear-gradient(#3b82f6, #0091ff); */
+  background: #3B82F6;
   background-size: cover;
   overflow: hidden;
   z-index: 1;
@@ -51,7 +51,7 @@ body {
   height: 100%;
   position: absolute;
   top: 0;
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .background h1,

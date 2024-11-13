@@ -5,7 +5,7 @@ var flake =
 // Function to create snowflakes
 function create_snow_lake() {
   // Generate random values for snowflake properties
-  var falling_time = Math.floor(Math.random() * 10) + 5; // Random falling time between 5 and 105 seconds
+  var falling_time = Math.floor(Math.random() * 100) + 5; // Random falling time between 5 and 105 seconds
   var flake_pos = Math.floor(Math.random() * 200); // Random position between 4% and 104% of the viewport width
   var flake_size = (Math.floor(Math.random() * 100) + 1) / 200; // Random size between 0.01 and 1
   // Create the HTML for the snowflake

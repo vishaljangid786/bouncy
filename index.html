@@ -23,11 +23,9 @@
   </head>
   <body>
     <div class="relative">
-      <!-- <div
-        class="background absolute h-[150vh] lg:h-[100vh] sm:h-[130vh] left-0 right-0"
-      >
+      <div class="background absolute h-full bottom-0 top-0 left-0 right-0">
         <div class="bg-opacity"></div>
-      </div> -->
+      </div>
 
       <!-- navbar -->
       <nav
@@ -139,21 +137,53 @@
         </div>
       </div>
 
-      <!-- part 1 bouncy -->
-      <div class="min-h-screen w-full lg:flex bg-blue-500 flex-col lg:flex-row">
+      <!-- app Store -->
+      <div
+        class="flex relative space-x-2 sm:space-x-4 text-black mt-10 justify-center w-full z-[1]"
+      >
         <div
-          class="left w-full lg:w-1/2 hover:scale-[1.02] transition min-h-screen flex items-center justify-center"
+          class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+        >
+          <div
+            class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
+          >
+            <i class="fa-brands fa-apple"></i>
+          </div>
+          <div class="store">
+            <h3 class="">Waiting us on</h3>
+            <h1 class="spicy-rice text-xl">Amazon Store</h1>
+          </div>
+        </div>
+        <div
+          class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+        >
+          <div
+            class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
+          >
+            <i class="fa-brands fa-google-play"></i>
+          </div>
+          <div class="store">
+            <h3 class="">Waiting us on</h3>
+            <h1 class="spicy-rice text-xl">Play Store</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- part 1 bouncy -->
+      <div
+        class="min-h-screen relative z-[1] w-full lg:flex flex-col lg:flex-row"
+      >
+        <div
+          class="left w-full lg:w-1/2 hover:scale-[1.02] transition flex items-center justify-center"
         >
           <img
-            src="./bouncing ball 3d/Rectangle 23.png"
-            class="hover:scale-[1.02] rounded-3xl sm:h-[80%] h-[60%] object-cover hover:shadow-2xl"
+            src="./images/Rectangle 23.png"
+            class="hover:scale-[1.02] rounded-3xl sm:w-fit lgw-[50%] mt-10 w-[90%] h-[60%] object-cover hover:shadow-2xl"
             alt="Image"
           />
         </div>
 
-        <div
-          class="right w-full lg:w-1/2 min-h-screen flex items-center justify-center"
-        >
+        <div class="right w-full lg:w-1/2 flex items-center justify-center">
           <div
             class="w-[80%] h-fit px-6 lg:px-16 text-center text-white flex flex-col gap-4 lg:gap-6"
           >
@@ -179,10 +209,10 @@
       </div>
 
       <!-- part 2 bouncy -->
-      <div class="min-h-screen w-full lg:flex bg-blue-500 flex-col lg:flex-row">
-        <div
-          class="right w-full lg:w-1/2 min-h-screen flex items-center justify-center"
-        >
+      <div
+        class="min-h-screen relative z-[1] w-full lg:flex flex-col lg:flex-row"
+      >
+        <div class="right w-full lg:w-1/2 flex items-center justify-center">
           <div
             class="w-[80%] h-fit px-6 lg:px-16 text-center text-white flex flex-col gap-4 lg:gap-6"
           >
@@ -206,27 +236,19 @@
           </div>
         </div>
         <div
-          class="left w-full lg:w-1/2 hover:scale-[1.02] transition min-h-screen flex items-center justify-center"
+          class="left w-full lg:w-1/2 hover:scale-[1.02] transition flex items-center justify-center"
         >
           <img
-            src="./bouncing ball 3d/Rectangle 23.png"
-            class="hover:scale-[1.02] rounded-3xl sm:h-[80%] h-[60%] object-cover hover:shadow-2xl"
+            src="./images/Rectangle 23.png"
+            class="hover:scale-[1.02] rounded-3xl sm:w-fit lgw-[50%] mt-10 w-[90%] h-[60%] object-cover hover:shadow-2xl"
             alt="Image"
           />
         </div>
       </div>
 
-      <div class="videodiv w-full flex items-center justify-center">
-        <div
-          class="bg-black flex items-center justify-center text-[5vw] text-zinc-800 w-[95%] h-[50vw] rounded-3xl"
-        >
-          <i class="fa-solid fa-video"></i>
-        </div>
-      </div>
-
       <!-- app Store -->
       <div
-        class="flex space-x-2 sm:space-x-4 text-black mt-10 justify-center w-full z-[1]"
+        class="flex relative space-x-2 sm:space-x-4 text-black mt-10 justify-center w-full z-[1]"
       >
         <div
           class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
@@ -256,9 +278,21 @@
         </div>
       </div>
 
-      <div class="w-full text-center">
-        <div class="w-[80%] mx-auto mt-16">
-          <h1 class="text-5xl w-3/5 mx-auto spicy-rice">
+      <!-- video div -->
+      <div
+        class="videodiv relative z-[1] mt-20 w-full flex items-center justify-center"
+      >
+        <div
+          class="bg-black flex items-center justify-center text-[5vw] text-zinc-800 w-[95%] h-[50vw] rounded-3xl"
+        >
+          <i class="fa-solid fa-video"></i>
+        </div>
+      </div>
+
+      <!-- img container -->
+      <div class="relative z-[1]">
+        <div class="w-[80%] mx-auto mt-16 text-center">
+          <h1 class="text-5xl sm:w-3/5 mx-auto spicy-rice">
             Express your style with unique skins, trails, and abilities
           </h1>
           <h3 class="mt-2">
@@ -273,154 +307,190 @@
         </div>
 
         <div
-          class="img-container flex-wrap flex items-center justify-around gap-10 mt-40 h-4/5 px-10 lg:px-22"
+          class="img-container relative z-[1] flex-wrap flex items-center justify-around gap-10 mt-40 h-4/5 px-10 lg:px-22"
         >
           <img
-            src="./bouncing ball 3d/Rectangle 20.png"
+            src="./images/Rectangle 20.png"
             class="hover:scale-[1.02] h-full transition"
             alt=""
           />
           <img
-            src="./bouncing ball 3d/Rectangle 21.png"
+            src="./images/Rectangle 21.png"
             class="hover:scale-[1.02] lg:-translate-y-20 h-full transition"
             alt=""
           />
           <img
-            src="./bouncing ball 3d/Rectangle 22.png"
+            src="./images/Rectangle 22.png"
             class="hover:scale-[1.02] h-full transition"
             alt=""
           />
         </div>
+      </div>
 
-        <!-- app Store -->
+      <!-- app Store -->
+      <div
+        class="flex space-x-2 relative sm:space-x-4 text-black mt-10 justify-center w-full z-[1]"
+      >
         <div
-          class="flex space-x-2 sm:space-x-4 text-black mt-10 justify-center w-full z-[1]"
+          class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
         >
           <div
-            class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+            class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
           >
-            <div
-              class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
-            >
-              <i class="fa-brands fa-apple"></i>
-            </div>
-            <div class="store">
-              <h3 class="">Waiting us on</h3>
-              <h1 class="spicy-rice text-xl">App Store</h1>
-            </div>
+            <i class="fa-brands fa-apple"></i>
           </div>
-          <div
-            class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
-          >
-            <div
-              class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
-            >
-              <i class="fa-brands fa-google-play"></i>
-            </div>
-            <div class="store">
-              <h3 class="">Waiting us on</h3>
-              <h1 class="spicy-rice text-xl">Play Store</h1>
-            </div>
+          <div class="store">
+            <h3 class="">Waiting us on</h3>
+            <h1 class="spicy-rice text-xl">App Store</h1>
           </div>
         </div>
-
-        <!-- kids love -->
-        <div class="h-1/2 w-full px-20 py-20 lg:flex justify-around">
-          <!-- <img src="" class="bg-gray-300 w-[400px] h-1/2" alt=""> -->
+        <div
+          class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+        >
           <div
-            class="sm:w-[400px] min-h-[200px] w-[250px] mx-auto rounded-xl bg-gray-300 lg:mb-0 mb-10"
-          ></div>
-          <div class="flex lg:w-1/3 mx-auto items-center flex-col gap-4">
-            <h1 class="text-3xl spicy-rice">A Game Kids Love, Parents Trust</h1>
-            <h3 class="">
-              Safe, engaging, and visually captivating winter wonderland theme
-              designed for young players.
-            </h3>
-            <button
-              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto mt-6"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-
-        <!-- footer -->
-        <div class="bg-gray-400">
-          <div
-            class="flex flex-col gap-2 items-center justify-center mx-auto w-fit px-20 pt-20"
+            class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
           >
-            <p class="rounded-full bg-blue-500 p-2 w-fit">
-              THE BEST IN THE MARKET
-            </p>
-            <h1 class="spicy-rice text-3xl">
-              Download and Start Bouncing Today!
-            </h1>
-            <p>Available on Android</p>
-            <!-- app Store -->
-            <div
-              class="flex space-x-2 text-black mt-10 justify-center w-full z-[1]"
-            >
-              <div
-                class="left p-2 flex gap-2 items-center px-2 shadow-2xl rounded-3xl bg-white"
-              >
-                <div
-                  class="logo bg-gray-300 p-2 rounded-lg flex items-center justify-center w-[32px] h-[32px]"
-                >
-                  <i class="fa-brands fa-apple"></i>
-                </div>
-                <div class="store">
-                  <h3 class="">Waiting us on</h3>
-                  <h1 class="spicy-rice">App Store</h1>
-                </div>
-              </div>
-              <div
-                class="left p-2 flex gap-2 items-center px-2 shadow-2xl rounded-3xl bg-white"
-              >
-                <div
-                  class="logo bg-gray-300 p-2 rounded-lg flex items-center justify-center w-[32px] h-[32px]"
-                >
-                  <i class="fa-brands fa-google-play"></i>
-                </div>
-                <div class="store">
-                  <h3 class="">Waiting us on</h3>
-                  <h1 class="spicy-rice">Play Store</h1>
-                </div>
-              </div>
-            </div>
+            <i class="fa-brands fa-google-play"></i>
+          </div>
+          <div class="store">
+            <h3 class="">Waiting us on</h3>
+            <h1 class="spicy-rice text-xl">Play Store</h1>
           </div>
         </div>
       </div>
-      <div class="w-full relative bg-gray-400">
-        <img src="./bouncing ball 3d/Rectangle 27.png" class="w-full" alt="" />
+
+      <!-- kids love -->
+      <div
+        class="h-1/2 relative z-[1] w-full px-20 py-20 lg:flex justify-around"
+      >
+        <!-- <img src="" class="bg-gray-300 w-[400px] h-1/2" alt=""> -->
         <div
-          class="absolute top-0 left-0 text-black px-32 py-28 flex justify-around w-full"
+          class="sm:w-[400px] min-h-[200px] w-[250px] mx-auto rounded-xl bg-gray-300 lg:mb-0 mb-10"
+        ></div>
+        <div
+          class="flex lg:w-1/3 mx-auto items-center flex-col gap-4 text-center"
         >
-          <div class="flex flex-col gap-4 w-1/5">
-            <img src="./images/Bouncing Ball 3D.png" alt="" class="" />
-            <p class="text-gray-500">
-              Clarity gives you the blocks and components you need to create a
-              truly professional website.
-            </p>
-            <div class="social-links mt-10 flex gap-3">
-              <i
-                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-instagram"
-              ></i>
-              <i
-                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-facebook"
-              ></i>
-              <i
-                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-twitter"
-              ></i>
-              <i
-                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-github"
-              ></i>
+          <h1 class="text-3xl spicy-rice">A Game Kids Love, Parents Trust</h1>
+          <h3>
+            Safe, engaging, and visually captivating winter wonderland theme
+            designed for young players.
+          </h3>
+          <button
+            class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto mt-6"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="bg-gray-400 relative z-[1]">
+        <div
+          class="flex flex-col gap-2 items-center justify-center mx-auto w-fit px-20 pt-20"
+        >
+          <p class="rounded-full p-2 w-fit bg-blue-500 px-4">
+            THE BEST IN THE MARKET
+          </p>
+          <h1 class="spicy-rice text-3xl text-center">
+            Download and Start Bouncing Today!
+          </h1>
+          <p>Available on Android</p>
+          <div
+            class="flex gap-3 text-black mt-10 sm:flex-row flex-col justify-center w-fit z-[1]"
+          >
+            <div
+              class="left p-2 flex gap-2 items-center px-2 shadow-2xl rounded-3xl bg-white"
+            >
+              <div
+                class="logo bg-gray-300 p-2 rounded-lg flex items-center justify-center w-[32px] h-[32px]"
+              >
+                <i class="fa-brands fa-apple"></i>
+              </div>
+              <div class="store text-center">
+                <h3 class="">Waiting us on</h3>
+                <h1 class="spicy-rice">App Store</h1>
+              </div>
+            </div>
+            <div
+              class="left p-2 flex gap-2 items-center px-2 shadow-2xl rounded-3xl bg-white"
+            >
+              <div
+                class="logo bg-gray-300 p-2 rounded-lg flex items-center justify-center w-[32px] h-[32px]"
+              >
+                <i class="fa-brands fa-google-play"></i>
+              </div>
+              <div class="store">
+                <h3 class="">Waiting us on</h3>
+                <h1 class="spicy-rice">Play Store</h1>
+              </div>
             </div>
           </div>
-          <div>2</div>
-          <div>2</div>
-          <div>2</div>
+        </div>
+
+        <div class="w-full relative bg-gray-400">
+          <img src="./images/Rectangle 27.png" class="w-full h-full" alt="" />
+          <div
+            class="absolute top-0 left-0 text-black px-32 py-28 flex justify-between w-full"
+          >
+            <div class="flex flex-col gap-4 w-1/5">
+              <img src="./images/Bouncing Ball 3D.png" alt="" class="" />
+              <p class="text-gray-500 text-center">
+                Clarity gives you the blocks and components you need to create a
+                truly professional website.
+              </p>
+              <div class="social-links mt-10 flex gap-3">
+                <i
+                  class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-instagram"
+                ></i>
+                <i
+                  class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-facebook"
+                ></i>
+                <i
+                  class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-twitter"
+                ></i>
+                <i
+                  class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-github"
+                ></i>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h1 class="text-blue-500 font-semibold">COMPANY</h1>
+              <div class="flex gap-4">
+                <a href="#">Home</a>
+                <a href="#">Game</a>
+                <a href="#">Features</a>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg h-fit w-fit shadow-lg flex flex-col gap-4"
+            >
+              <!-- Google Play Button -->
+              <a
+                href="https://play.google.com/store"
+                target="_blank"
+                class="flex items-center bg-blue-500 gap-4 text-white py-3 px-5 rounded-lg shadow-md hover:bg-green-700 transition duration-300"
+              >
+                <i class="fa-brands fa-google-play text-2xl"></i>
+                <span class="font-semibold">Get it on Google Play</span>
+              </a>
+
+              <!-- Apple Store Button -->
+              <a
+                href="https://www.apple.com/app-store/"
+                target="_blank"
+                class="flex items-center bg-gray-400 gap-4 text-white py-3 px-5 rounded-lg shadow-md hover:bg-gray-900 transition duration-300"
+              >
+                <i class="fa-brands fa-apple text-2xl"></i>
+                <span class="font-semibold">Get it on the App Store</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl py-4 text-center">
+          All copyrights are reserved since 2020.
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
