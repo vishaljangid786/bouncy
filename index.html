@@ -23,14 +23,15 @@
   </head>
   <body>
     <div class="relative">
-      <div
+      <!-- <div
         class="background absolute h-[150vh] lg:h-[100vh] sm:h-[130vh] left-0 right-0"
       >
         <div class="bg-opacity"></div>
-      </div>
+      </div> -->
+
       <!-- navbar -->
       <nav
-        class="w-[80%] z-[10] fixed top-12 left-1/2 p-2 px-6 -translate-x-1/2 bg-white rounded-3xl mx-auto"
+        class="w-[80%] z-[10] fixed text-black top-12 left-1/2 p-2 px-6 -translate-x-1/2 bg-white rounded-3xl mx-auto"
       >
         <div class="flex items-center justify-between">
           <!-- Left section with logo -->
@@ -101,7 +102,7 @@
 
       <!-- Hero -->
       <div
-        class="hero relative z-[9] w-full lg:h-screen flex items-center justify-center"
+        class="hero relative z-[9] w-full lg:h-[100vh] flex items-center justify-center"
       >
         <div
           class="w-[94%] transition hover:scale-[1.01] hover:shadow-2xl bg-gray-300 lg:flex lg:items-start items-center justify-between lg:h-[90%] rounded-3xl pt-10 lg:pt-40"
@@ -133,35 +134,43 @@
           <div
             class="right lg:w-[40%] lg:mt-0 my-10 flex items-center justify-center"
           >
-            <img src="./images/phone.png" alt="" />
+            <img src="./images/phone.png" class="px-10" alt="" />
           </div>
         </div>
       </div>
 
-      <div class="h-screen w-full lg:flex bg-blue-500">
+      <!-- part 1 bouncy -->
+      <div class="min-h-screen w-full lg:flex bg-blue-500 flex-col lg:flex-row">
         <div
-          class="left w-full hover:scale-[1.02] transition h-screen flex items-center justify-center"
+          class="left w-full lg:w-1/2 hover:scale-[1.02] transition min-h-screen flex items-center justify-center"
         >
           <img
             src="./bouncing ball 3d/Rectangle 23.png"
-            class="hover:scale-[1.02] rounded-3xl h-[80%] object-cover"
-            alt=""
+            class="hover:scale-[1.02] rounded-3xl sm:h-[80%] h-[60%] object-cover hover:shadow-2xl"
+            alt="Image"
           />
         </div>
-        <div class="right w-full h-screen flex items-center justify-center">
-          <div class="w-[80%] px-16 text-center text-white flex flex-col gap-3">
-            <h1 class="text-5xl spicy-rice">Why Play Bouncing Ball 3D?</h1>
-            <h3 class="spicy-rice text-sm">
+
+        <div
+          class="right w-full lg:w-1/2 min-h-screen flex items-center justify-center"
+        >
+          <div
+            class="w-[80%] h-fit px-6 lg:px-16 text-center text-white flex flex-col gap-4 lg:gap-6"
+          >
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl spicy-rice">
+              Why Play Bouncing Ball 3D?
+            </h1>
+            <h3 class="spicy-rice text-sm sm:text-base lg:text-lg">
               Jump, run, and skip your direction through testing levels set in
               shocking frigid scenes. Intended for youngsters and youthful
-              adolescents, this tomfoolery, quick moving game allows you to
-              resist gravity and hold back nothing of the month to month
-              competitor list! Now is the ideal time to flaunt your abilities,
-              open great skins, and challenge companions on your journey to turn
-              into a definitive Bouncing Ball champion!
+              adolescents, this fun, fast-paced game allows you to resist
+              gravity and hold back nothing of the monthly leaderboard! Now is
+              the ideal time to flaunt your abilities, unlock great skins, and
+              challenge friends on your journey to become the ultimate Bouncing
+              Ball champion!
             </h3>
             <button
-              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto"
+              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto mt-6"
             >
               Learn More
             </button>
@@ -169,44 +178,85 @@
         </div>
       </div>
 
-      <div class="h-screen w-full lg:flex bg-blue-500">
-        <div class="right w-full h-screen flex items-center justify-center">
-          <div class="w-[80%] px-16 text-center text-white flex flex-col gap-3">
-            <h1 class="text-5xl spicy-rice">
+      <!-- part 2 bouncy -->
+      <div class="min-h-screen w-full lg:flex bg-blue-500 flex-col lg:flex-row">
+        <div
+          class="right w-full lg:w-1/2 min-h-screen flex items-center justify-center"
+        >
+          <div
+            class="w-[80%] h-fit px-6 lg:px-16 text-center text-white flex flex-col gap-4 lg:gap-6"
+          >
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl spicy-rice">
               Challenging Levels and Daily Missions
             </h1>
-            <h3 class="spicy-rice text-sm">
+            <h3 class="spicy-rice text-sm sm:text-base lg:text-lg">
               Jump, run, and skip your direction through testing levels set in
               shocking frigid scenes. Intended for youngsters and youthful
-              adolescents, this tomfoolery, quick moving game allows you to
-              resist gravity and hold back nothing of the month to month
-              competitor list! Now is the ideal time to flaunt your abilities,
-              open great skins, and challenge companions on your journey to turn
-              into a definitive Bouncing Ball champion!
+              adolescents, this fun, fast-paced game allows you to resist
+              gravity and hold back nothing of the monthly leaderboard! Now is
+              the ideal time to flaunt your abilities, unlock great skins, and
+              challenge friends on your journey to become the ultimate Bouncing
+              Ball champion!
             </h3>
             <button
-              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto"
+              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto mt-6"
             >
               Learn More
             </button>
           </div>
         </div>
         <div
-          class="left w-full hover:scale-[1.02] transition h-screen flex items-center justify-center"
+          class="left w-full lg:w-1/2 hover:scale-[1.02] transition min-h-screen flex items-center justify-center"
         >
           <img
-            src="./bouncing ball 3d/Rectangle 24.png"
-            class="hover:scale-[1.02] rounded-3xl h-[80%] object-cover"
-            alt=""
+            src="./bouncing ball 3d/Rectangle 23.png"
+            class="hover:scale-[1.02] rounded-3xl sm:h-[80%] h-[60%] object-cover hover:shadow-2xl"
+            alt="Image"
           />
         </div>
       </div>
 
-      <div class="videodiv w-full h-screen flex items-center justify-center">
-        <div class="bg-black w-[95%] h-[96%] rounded-3xl"></div>
+      <div class="videodiv w-full flex items-center justify-center">
+        <div
+          class="bg-black flex items-center justify-center text-[5vw] text-zinc-800 w-[95%] h-[50vw] rounded-3xl"
+        >
+          <i class="fa-solid fa-video"></i>
+        </div>
       </div>
 
-      <div class="h-screen w-full text-center">
+      <!-- app Store -->
+      <div
+        class="flex space-x-2 sm:space-x-4 text-black mt-10 justify-center w-full z-[1]"
+      >
+        <div
+          class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+        >
+          <div
+            class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
+          >
+            <i class="fa-brands fa-apple"></i>
+          </div>
+          <div class="store">
+            <h3 class="">Waiting us on</h3>
+            <h1 class="spicy-rice text-xl">App Store</h1>
+          </div>
+        </div>
+        <div
+          class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+        >
+          <div
+            class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
+          >
+            <i class="fa-brands fa-google-play"></i>
+          </div>
+          <div class="store">
+            <h3 class="">Waiting us on</h3>
+            <h1 class="spicy-rice text-xl">Play Store</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full text-center">
         <div class="w-[80%] mx-auto mt-16">
           <h1 class="text-5xl w-3/5 mx-auto spicy-rice">
             Express your style with unique skins, trails, and abilities
@@ -222,60 +272,155 @@
           </h3>
         </div>
 
-        <div class="img-container flex-wrap flex items-center justify-around gap-10 mt-40 h-4/5 px-10 lg:px-32">
-          <img src="./bouncing ball 3d/Rectangle 20.png" class="hover:scale-[1.02] h-full transition" alt="">
-          <img src="./bouncing ball 3d/Rectangle 21.png" class="hover:scale-[1.02] lg:-translate-y-20 h-full transition" alt="">
-          <img src="./bouncing ball 3d/Rectangle 22.png" class="hover:scale-[1.02] h-full transition" alt="">
+        <div
+          class="img-container flex-wrap flex items-center justify-around gap-10 mt-40 h-4/5 px-10 lg:px-22"
+        >
+          <img
+            src="./bouncing ball 3d/Rectangle 20.png"
+            class="hover:scale-[1.02] h-full transition"
+            alt=""
+          />
+          <img
+            src="./bouncing ball 3d/Rectangle 21.png"
+            class="hover:scale-[1.02] lg:-translate-y-20 h-full transition"
+            alt=""
+          />
+          <img
+            src="./bouncing ball 3d/Rectangle 22.png"
+            class="hover:scale-[1.02] h-full transition"
+            alt=""
+          />
         </div>
 
-        <div class="w-40 h-16  bg-red-500 mx-auto my-10">space for apple store and play store</div>
-
-        <!-- <div class="w-full h-1/2 bg-blue-900 flex ">
-          <div class="left  h-40 bg-red-800">asdg</div>
-          <div class="rigth flex items-center justify-center">
-            <div class="">asdf</div>
+        <!-- app Store -->
+        <div
+          class="flex space-x-2 sm:space-x-4 text-black mt-10 justify-center w-full z-[1]"
+        >
+          <div
+            class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+          >
+            <div
+              class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
+            >
+              <i class="fa-brands fa-apple"></i>
+            </div>
+            <div class="store">
+              <h3 class="">Waiting us on</h3>
+              <h1 class="spicy-rice text-xl">App Store</h1>
+            </div>
           </div>
-        </div> -->
+          <div
+            class="left p-2 flex gap-2 items-center px-3 shadow-2xl rounded-3xl bg-white"
+          >
+            <div
+              class="logo text-3xl bg-gray-300 p-2 rounded-xl flex items-center justify-center w-[44px] h-[44px]"
+            >
+              <i class="fa-brands fa-google-play"></i>
+            </div>
+            <div class="store">
+              <h3 class="">Waiting us on</h3>
+              <h1 class="spicy-rice text-xl">Play Store</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- kids love -->
+        <div class="h-1/2 w-full px-20 py-20 lg:flex justify-around">
+          <!-- <img src="" class="bg-gray-300 w-[400px] h-1/2" alt=""> -->
+          <div
+            class="sm:w-[400px] min-h-[200px] w-[250px] mx-auto rounded-xl bg-gray-300 lg:mb-0 mb-10"
+          ></div>
+          <div class="flex lg:w-1/3 mx-auto items-center flex-col gap-4">
+            <h1 class="text-3xl spicy-rice">A Game Kids Love, Parents Trust</h1>
+            <h3 class="">
+              Safe, engaging, and visually captivating winter wonderland theme
+              designed for young players.
+            </h3>
+            <button
+              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto mt-6"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="bg-gray-400">
+          <div
+            class="flex flex-col gap-2 items-center justify-center mx-auto w-fit px-20 pt-20"
+          >
+            <p class="rounded-full bg-blue-500 p-2 w-fit">
+              THE BEST IN THE MARKET
+            </p>
+            <h1 class="spicy-rice text-3xl">
+              Download and Start Bouncing Today!
+            </h1>
+            <p>Available on Android</p>
+            <!-- app Store -->
+            <div
+              class="flex space-x-2 text-black mt-10 justify-center w-full z-[1]"
+            >
+              <div
+                class="left p-2 flex gap-2 items-center px-2 shadow-2xl rounded-3xl bg-white"
+              >
+                <div
+                  class="logo bg-gray-300 p-2 rounded-lg flex items-center justify-center w-[32px] h-[32px]"
+                >
+                  <i class="fa-brands fa-apple"></i>
+                </div>
+                <div class="store">
+                  <h3 class="">Waiting us on</h3>
+                  <h1 class="spicy-rice">App Store</h1>
+                </div>
+              </div>
+              <div
+                class="left p-2 flex gap-2 items-center px-2 shadow-2xl rounded-3xl bg-white"
+              >
+                <div
+                  class="logo bg-gray-300 p-2 rounded-lg flex items-center justify-center w-[32px] h-[32px]"
+                >
+                  <i class="fa-brands fa-google-play"></i>
+                </div>
+                <div class="store">
+                  <h3 class="">Waiting us on</h3>
+                  <h1 class="spicy-rice">Play Store</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="w-full relative bg-gray-400">
+        <img src="./bouncing ball 3d/Rectangle 27.png" class="w-full" alt="" />
+        <div
+          class="absolute top-0 left-0 text-black px-32 py-28 flex justify-around w-full"
+        >
+          <div class="flex flex-col gap-4 w-1/5">
+            <img src="./images/Bouncing Ball 3D.png" alt="" class="" />
+            <p class="text-gray-500">
+              Clarity gives you the blocks and components you need to create a
+              truly professional website.
+            </p>
+            <div class="social-links mt-10 flex gap-3">
+              <i
+                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-instagram"
+              ></i>
+              <i
+                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-facebook"
+              ></i>
+              <i
+                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-twitter"
+              ></i>
+              <i
+                class="text-xl border rounded-full p-2 w-10 h-10 hover:bg-blue-500 hover:text-white cursor-pointer flex items-center justify-center fa-brands fa-github"
+              ></i>
+            </div>
+          </div>
+          <div>2</div>
+          <div>2</div>
+          <div>2</div>
+        </div>
+      </div>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
   </body>
 </html>
