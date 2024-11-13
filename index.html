@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="relative">
+      <div
+        class="background absolute h-[150vh] lg:h-[100vh] sm:h-[130vh] left-0 right-0"
+      >
+        <div class="bg-opacity"></div>
+      </div>
+      <!-- navbar -->
+      <nav
+        class="w-[80%] z-[10] fixed top-12 left-1/2 p-2 px-6 -translate-x-1/2 bg-white rounded-3xl mx-auto"
+      >
+        <div class="flex items-center justify-between">
+          <!-- Left section with logo -->
+          <div class="flex items-center gap-2">
+            <!-- Circle logo -->
+            <div
+              class="sm:w-[30px] w-[25px] sm:h-[30px] h-[25px] bg-gray-800 rounded-full"
+            ></div>
+            <!-- New logo, will change based on mobile menu state -->
+            <img
+              src="./images/Bouncing Ball 3D.png"
+              alt="New Logo"
+              class=""
+              id="logo"
+            />
+          </div>
+
+          <!-- Desktop menu -->
+          <div class="lg:flex hidden w-1/2 justify-between">
+            <ul class="flex items-center gap-4 text-xl">
+              <li>Home</li>
+              <li>Game</li>
+              <li>Features</li>
+            </ul>
+            <button class="bg-[#4FC3F7] px-4 py-2 rounded-full text-white">
+              Download Now
+            </button>
+          </div>
+
+          <!-- Mobile menu toggle (hamburger) -->
+          <div
+            class="lg:hidden flex items-center text-2xl pr-3 justify-center cursor-pointer"
+            id="mobileMenuToggle"
+          >
+            <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+          </div>
+        </div>
+
+        <!-- Mobile menu links (hidden by default) -->
+        <div
+          class="lg:hidden flex flex-col text-center justify-center mt-3 gap-2 hidden"
+          id="mobileMenu"
+        >
+          <ul class="flex flex-col gap-2">
+            <li
+              class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+            >
+              Home
+            </li>
+            <li
+              class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+            >
+              Game
+            </li>
+            <li
+              class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+            >
+              Features
+            </li>
+          </ul>
+          <button
+            class="bg-[#4FC3F7] px-4 py-2 rounded-full text-white hover:bg-[#4F93F9]"
+          >
+            Download Now
+          </button>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <div
+        class="hero relative z-[9] w-full lg:h-screen flex items-center justify-center"
+      >
+        <div
+          class="w-[94%] transition hover:scale-[1.01] hover:shadow-2xl bg-gray-300 lg:flex lg:items-start items-center justify-between lg:h-[90%] rounded-3xl pt-10 lg:pt-40"
+        >
+          <div class="left flex justify-center flex-1">
+            <div
+              class="mt-20 text-white items-center text-center w-2/3 flex flex-col gap-6"
+            >
+              <h1 class="text-4xl spicy-rice">
+                Bounce, Run, and Conquer the Sky with Bouncing Ball 3D!
+              </h1>
+              <h3 class="text-xl poppins">
+                Challenge yourself in a gravity-defying arcade adventure.
+              </h3>
+              <div class="flex gap-8">
+                <button
+                  class="mt-6 px-1 text-[20px] bg-[#4FC3F7] rounded-xl py-2 w-fit"
+                >
+                  Download Now
+                </button>
+                <button
+                  class="mt-6 px-1 text-[20px] border-2 border-[#4FC3F7] hover:bg-[#4FC3F7] rounded-xl py-2 w-fit"
+                >
+                  Download Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="right lg:w-[40%] lg:mt-0 my-10 flex items-center justify-center"
+          >
+            <img src="./images/phone.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="h-screen w-full lg:flex bg-blue-500">
+        <div
+          class="left w-full hover:scale-[1.02] transition h-screen flex items-center justify-center"
+        >
+          <img
+            src="./bouncing ball 3d/Rectangle 23.png"
+            class="hover:scale-[1.02] rounded-3xl h-[80%] object-cover"
+            alt=""
+          />
+        </div>
+        <div class="right w-full h-screen flex items-center justify-center">
+          <div class="w-[80%] px-16 text-center text-white flex flex-col gap-3">
+            <h1 class="text-5xl spicy-rice">Why Play Bouncing Ball 3D?</h1>
+            <h3 class="spicy-rice text-sm">
+              Jump, run, and skip your direction through testing levels set in
+              shocking frigid scenes. Intended for youngsters and youthful
+              adolescents, this tomfoolery, quick moving game allows you to
+              resist gravity and hold back nothing of the month to month
+              competitor list! Now is the ideal time to flaunt your abilities,
+              open great skins, and challenge companions on your journey to turn
+              into a definitive Bouncing Ball champion!
+            </h3>
+            <button
+              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-screen w-full lg:flex bg-blue-500">
+        <div class="right w-full h-screen flex items-center justify-center">
+          <div class="w-[80%] px-16 text-center text-white flex flex-col gap-3">
+            <h1 class="text-5xl spicy-rice">
+              Challenging Levels and Daily Missions
+            </h1>
+            <h3 class="spicy-rice text-sm">
+              Jump, run, and skip your direction through testing levels set in
+              shocking frigid scenes. Intended for youngsters and youthful
+              adolescents, this tomfoolery, quick moving game allows you to
+              resist gravity and hold back nothing of the month to month
+              competitor list! Now is the ideal time to flaunt your abilities,
+              open great skins, and challenge companions on your journey to turn
+              into a definitive Bouncing Ball champion!
+            </h3>
+            <button
+              class="p-2 bg-white text-blue-500 w-fit rounded-xl font-semibold mx-auto"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div
+          class="left w-full hover:scale-[1.02] transition h-screen flex items-center justify-center"
+        >
+          <img
+            src="./bouncing ball 3d/Rectangle 24.png"
+            class="hover:scale-[1.02] rounded-3xl h-[80%] object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="videodiv w-full h-screen flex items-center justify-center">
+        <div class="bg-black w-[95%] h-[96%] rounded-3xl"></div>
+      </div>
+
+      <div class="h-screen w-full text-center">
+        <div class="w-[80%] mx-auto mt-16">
+          <h1 class="text-5xl w-3/5 mx-auto spicy-rice">
+            Express your style with unique skins, trails, and abilities
+          </h1>
+          <h3 class="mt-2">
+            Jump, run, and skip your direction through testing levels set in
+            shocking frigid scenes. Intended for youngsters and youthful
+            adolescents, this tomfoolery, quick moving game allows you to resist
+            gravity and hold back nothing of the month to month competitor list!
+            Now is the ideal time to flaunt your abilities, open great skins,
+            and challenge companions on your journey to turn into a definitive
+            Bouncing Ball champion!
+          </h3>
+        </div>
+
+        <div class="img-container flex-wrap flex items-center justify-around gap-10 mt-40 h-4/5 px-10 lg:px-32">
+          <img src="./bouncing ball 3d/Rectangle 20.png" class="hover:scale-[1.02] h-full transition" alt="">
+          <img src="./bouncing ball 3d/Rectangle 21.png" class="hover:scale-[1.02] lg:-translate-y-20 h-full transition" alt="">
+          <img src="./bouncing ball 3d/Rectangle 22.png" class="hover:scale-[1.02] h-full transition" alt="">
+        </div>
+
+        <div class="w-40 h-16  bg-red-500 mx-auto my-10">space for apple store and play store</div>
+
+        <!-- <div class="w-full h-1/2 bg-blue-900 flex ">
+          <div class="left  h-40 bg-red-800">asdg</div>
+          <div class="rigth flex items-center justify-center">
+            <div class="">asdf</div>
+          </div>
+        </div> -->
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
