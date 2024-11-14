@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="my-10">
+    <!-- navbar -->
+    <nav
+      class="w-[80%] z-[10] fixed text-black top-12 left-1/2 p-2 px-6 -translate-x-1/2 bg-white rounded-3xl mx-auto"
+    >
+      <div class="flex items-center justify-between">
+        <!-- Left section with logo -->
+        <div class="flex items-center gap-2">
+          <!-- Circle logo -->
+          <div
+            class="sm:w-[30px] w-[25px] sm:h-[30px] h-[25px] bg-gray-800 rounded-full"
+          ></div>
+          <!-- New logo, will change based on mobile menu state -->
+          <img
+            src="./images/Bouncing Ball 3D.png"
+            alt="New Logo"
+            class=""
+            id="logo"
+          />
+        </div>
+
+        <!-- Desktop menu -->
+        <div class="lg:flex hidden w-fit gap-10">
+          <ul class="flex items-center gap-4">
+            <a
+              class="hover:text-blue-500 transition hover:border-b border-blue-500"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="hover:text-blue-500 transition hover:border-b border-blue-500"
+              href="privacy-policy.html"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-blue-500 transition border-b border-blue-500"
+              href="terms&conditions.html"
+              >Terms & Conditons</a
+            >
+          </ul>
+          <button
+            class="bg-[#4FC3F7] px-4 py-2 hover:bg-blue-500 transition rounded-full text-white"
+          >
+            Download Now
+          </button>
+        </div>
+
+        <!-- Mobile menu toggle (hamburger) -->
+        <div
+          class="lg:hidden flex items-center text-2xl pr-3 justify-center cursor-pointer"
+          id="mobileMenuToggle"
+        >
+          <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+        </div>
+      </div>
+
+      <!-- Mobile menu links (hidden by default) -->
+      <div
+        class="lg:hidden flex flex-col text-center justify-center mt-3 gap-2 hidden"
+        id="mobileMenu"
+      >
+        <ul class="flex flex-col gap-2">
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="#game">Game</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="#features">Features</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="#privacy">Privacy Policy</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="#terms">Terms & Conditions</a>
+          </li>
+        </ul>
+        <button
+          class="bg-[#4FC3F7] px-4 py-2 rounded-full text-white hover:bg-[#4F93F9]"
+        >
+          Download Now
+        </button>
+      </div>
+    </nav>
+
+    <!-- Container for Terms and Conditions -->
+    <div class="max-w-7xl shadow-2xl mx-auto px-5 pt-20 pb-10">
+      <!-- Header Section -->
+      <header class="text-center mb-12">
+        <h1 class="text-3xl font-semibold text-gray-100">
+          Terms and Conditions
+        </h1>
+        <p class="text-gray-600">Last updated: November 14, 2024</p>
+      </header>
+
+      <!-- Terms Content -->
+      <section class="space-y-8">
+        <!-- Introduction -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100">
+            Interpretation and Definitions
+          </h2>
+          <p class="mt-2 text-gray-300">
+            The words of which the initial letter is capitalized have meanings
+            defined under the following conditions. The following definitions
+            shall have the same meaning regardless of whether they appear in
+            singular or plural form.
+          </p>
+        </section>
+
+        <!-- Definitions -->
+        <section>
+          <h3 class="text-xl font-semibold text-gray-100 mt-6">Definitions</h3>
+          <p class="mt-2 text-gray-300">
+            For the purposes of these Terms and Conditions:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 mt-4 text-gray-300">
+            <li>
+              <strong>Affiliate</strong> means an entity that controls, is
+              controlled by or is under common control with a party, where
+              "control" means ownership of 50% or more of the shares, equity
+              interest, or other securities entitled to vote for election of
+              directors or other managing authority.
+            </li>
+            <li><strong>Country</strong> refers to: Rajasthan, India</li>
+            <li>
+              <strong>Company</strong> (referred to as either "the Company",
+              "We", "Us" or "Our" in this Agreement) refers to Bouncing Ball 3D.
+            </li>
+            <li>
+              <strong>Device</strong> means any device that can access the
+              Service such as a computer, a cellphone or a digital tablet.
+            </li>
+            <li><strong>Service</strong> refers to the Website.</li>
+            <li>
+              <strong>Terms and Conditions</strong> (also referred to as
+              "Terms") mean these Terms and Conditions that form the entire
+              agreement between You and the Company regarding the use of the
+              Service. This Terms and Conditions agreement has been created with
+              the help of the
+              <a
+                href="https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/"
+                target="_blank"
+                class="text-zinc-800"
+                >Free Terms and Conditions Generator</a
+              >.
+            </li>
+            <li>
+              <strong>Third-party Social Media Service</strong> means any
+              services or content (including data, information, products or
+              services) provided by a third-party that may be displayed,
+              included, or made available by the Service.
+            </li>
+            <li>
+              <strong>Website</strong> refers to Bouncing Ball 3D, accessible
+              from
+              <a
+                href="https://www.bouncingserver.site/"
+                target="_blank"
+                class="text-zinc-800"
+                >https://www.bouncingserver.site/</a
+              >
+            </li>
+            <li>
+              <strong>You</strong> means the individual accessing or using the
+              Service, or the company, or other legal entity on behalf of which
+              such individual is accessing or using the Service, as applicable.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Acknowledgment -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100 mt-8">
+            Acknowledgment
+          </h2>
+          <p class="mt-2 text-gray-300">
+            These are the Terms and Conditions governing the use of this Service
+            and the agreement that operates between You and the Company. These
+            Terms and Conditions set out the rights and obligations of all users
+            regarding the use of the Service.
+          </p>
+          <p class="mt-2 text-gray-300">
+            By accessing or using the Service You agree to be bound by these
+            Terms and Conditions. If You disagree with any part of these Terms
+            and Conditions, then You may not access the Service.
+          </p>
+          <p class="mt-2 text-gray-300">
+            You represent that you are over the age of 18. The Company does not
+            permit those under 18 to use the Service.
+          </p>
+          <p class="mt-2 text-gray-300">
+            Your access to and use of the Service is also conditioned on Your
+            acceptance of and compliance with the Privacy Policy of the Company.
+            Please read Our
+            <a href="#" class="text-zinc-800">Privacy Policy</a> carefully
+            before using Our Service.
+          </p>
+        </section>
+
+        <!-- Other Sections -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100 mt-8">
+            Links to Other Websites
+          </h2>
+          <p class="mt-2 text-gray-300">
+            Our Service may contain links to third-party websites or services
+            that are not owned or controlled by the Company.
+          </p>
+          <p class="mt-2 text-gray-300">
+            The Company has no control over, and assumes no responsibility for,
+            the content, privacy policies, or practices of any third-party
+            websites or services. You further acknowledge and agree that the
+            Company shall not be responsible or liable, directly or indirectly,
+            for any damage or loss caused by or in connection with the use of or
+            reliance on any such content, goods, or services available on or
+            through any such websites or services.
+          </p>
+        </section>
+
+        <!-- Termination Section -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100 mt-8">Termination</h2>
+          <p class="mt-2 text-gray-300">
+            We may terminate or suspend Your access immediately, without prior
+            notice or liability, for any reason whatsoever, including without
+            limitation if You breach these Terms and Conditions.
+          </p>
+          <p class="mt-2 text-gray-300">
+            Upon termination, Your right to use the Service will cease
+            immediately.
+          </p>
+        </section>
+
+        <!-- Limitation of Liability Section -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100 mt-8">
+            Limitation of Liability
+          </h2>
+          <p class="mt-2 text-gray-300">
+            Notwithstanding any damages that You might incur, the entire
+            liability of the Company and any of its suppliers under any
+            provision of this Terms and Your exclusive remedy for all of the
+            foregoing shall be limited to the amount actually paid by You
+            through the Service or 100 USD if You haven't purchased anything
+            through the Service.
+          </p>
+        </section>
+
+        <!-- "AS IS" and "AS AVAILABLE" Disclaimer Section -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100 mt-8">
+            "AS IS" and "AS AVAILABLE" Disclaimer
+          </h2>
+          <p class="mt-2 text-gray-300">
+            The Service is provided to You "AS IS" and "AS AVAILABLE" and with
+            all faults and defects without warranty of any kind.
+          </p>
+        </section>
+
+        <!-- Governing Law Section -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100 mt-8">
+            Governing Law
+          </h2>
+          <p class="mt-2 text-gray-300">
+            The laws of the Country, excluding its conflicts of law rules, shall
+            govern this Terms and Your use of the Service.
+          </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-100 mt-8">Contact Us</h2>
+          <p class="mt-2 text-gray-300">
+            If you have any questions about these Terms and Conditions, You can
+            contact us:
+          </p>
+          <ul class="list-none mt-4">
+            <li class="text-gray-300">
+              By email:
+              <a
+                href="mailto:BouncingBall3Dsite@gmail.com"
+                class="text-zinc-800"
+                >BouncingBall3Dsite@gmail.com</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

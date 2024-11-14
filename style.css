@@ -24,6 +24,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+* {
+  user-select: none;
+}
+
+
+
+
 .spicy-rice {
   font-family: "Spicy Rice", serif;
   font-weight: 400;
