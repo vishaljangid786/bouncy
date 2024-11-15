@@ -13,6 +13,22 @@ body {
   color: white;
 }
 
+.bg-gray {
+  background: url('./images/BB\ 1.webg');
+  border-radius: 20px;
+  background-size: cover; /* Ensures the entire image fits */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.bg-grayi {
+  background: url('./images/BB\ 3.webg');
+  background-size: cover; /* Ensures the entire image fits */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
