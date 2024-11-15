@@ -17,6 +17,7 @@
   </head>
   <body>
     <div class="relative">
+      <!-- flake -->
       <div class="background absolute h-full bottom-0 top-0 left-0 right-0">
         <div class="bg-opacity"></div>
       </div>
@@ -42,7 +43,7 @@
           </div>
 
           <!-- Desktop menu -->
-          <div class="lg:flex hidden w-fit gap-10">
+          <div class="xl:flex hidden w-fit gap-10">
             <ul class="flex items-center gap-4">
               <a
                 class="hover:text-blue-500 transition hover:border-b border-blue-500"
@@ -80,7 +81,7 @@
 
           <!-- Mobile menu toggle (hamburger) -->
           <div
-            class="lg:hidden flex items-center text-2xl pr-3 justify-center cursor-pointer"
+            class="xl:hidden flex items-center text-2xl pr-3 justify-center cursor-pointer"
             id="mobileMenuToggle"
           >
             <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
@@ -89,7 +90,7 @@
 
         <!-- Mobile menu links (hidden by default) -->
         <div
-          class="lg:hidden flex flex-col text-center justify-center mt-3 gap-2 hidden"
+          class="xl:hidden flex flex-col text-center justify-center mt-3 gap-2 hidden"
           id="mobileMenu"
         >
           <ul class="flex flex-col gap-2">
@@ -129,33 +130,30 @@
       </nav>
 
       <!-- Hero -->
-      <div
-        id="home"
-        class="hero relative z-[9] w-full lg:h-[100vh] flex justify-center"
-      >
+      <div id="home" class="hero relative z-[9] w-full flex justify-center lg:h-[100vh]">
         <div
-          class="w-[94%] transition relative hover:scale-[1.01] pb-8 bg-gray-500 hover:drop-shadow-[0_0px_20px_rgba(255,255,255)] lg:flex lg:items-start items-center justify-between mt-10 lg:h-[90%] rounded-3xl pt-10 lg:pt-40"
+          class="w-[94%] transition relative hover:scale-[1.01] pb-8 bg-gray-500 hover:drop-shadow-[0_0px_20px_rgba(255,255,255)] flex flex-col lg:flex-row lg:items-start items-center justify-between mt-10 lg:h-[90%] rounded-3xl pt-10 lg:pt-40"
         >
           <div class="absolute top-0 left-0 w-full h-full bg-gray"></div>
-          <div class="left flex justify-center z-[999] text-black ">
+          <div class="left flex justify-center z-[999] text-black">
             <div
-              class="mt-20 items-center text-center w-2/3 flex flex-col gap-6"
+              class="mt-10 lg:mt-20 items-center text-center lg:text-left w-full lg:w-2/3 flex flex-col gap-6"
             >
-              <h1 class="text-4xl spicy-rice">
+              <h1 class="text-3xl lg:text-4xl spicy-rice">
                 Bounce, Run, and Conquer the Sky with Bouncing Ball 3D!
               </h1>
-              <h3 class="text-xl poppins">
+              <h3 class="text-lg lg:text-xl poppins">
                 Challenge yourself in a gravity-defying arcade adventure.
               </h3>
-              <div class="flex gap-8">
+              <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.selltechindia.bouncingball3D"
-                  class="mt-6 px-1 text-[20px] bg-[#4FC3F7] rounded-xl py-2 w-fit"
+                  class="mt-4 lg:mt-6 px-4 lg:px-6 text-[16px] lg:text-[20px] bg-[#4FC3F7] rounded-xl py-2 w-fit"
                 >
                   Download Now
                 </a>
                 <a
-                  class="mt-6 px-1 text-[20px] border-2 border-[#4FC3F7] hover:bg-[#4FC3F7] rounded-xl py-2 w-fit"
+                  class="mt-4 lg:mt-6 px-4 lg:px-6 text-[16px] lg:text-[20px] border-2 border-[#4FC3F7] hover:bg-[#4FC3F7] rounded-xl py-2 w-fit"
                 >
                   Contact Us
                 </a>
@@ -465,7 +463,7 @@
             <div class="flex justify-around flex-wrap gap-10 bg-[#5CE1E6]">
               <!-- Left Section -->
               <div
-                class="flex flex-col gap-4 sm:w-1/5 w-full items-center sm:items-start"
+                class="flex px-5 flex-col gap-4 sm:w-1/5 w-full items-center sm:items-start"
               >
                 <img
                   src="./images/Bouncing Ball 3D.png"
@@ -510,7 +508,7 @@
                 </div>
               </div>
               <!-- right div -->
-              <div class="flex flex-col md:flex-row justify-between">
+              <div class="flex px-5 flex-col md:flex-row justify-between">
                 <!-- Contact Form Section -->
                 <div class="mb-8 md:mb-0">
                   <h2 class="text-2xl text-blue-500 font-semibold mb-4">

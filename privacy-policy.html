@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -15,92 +16,110 @@
     />
   </head>
   <body>
+    <!-- navbar -->
+    <nav
+      class="w-[80%] z-[10] fixed text-black top-12 left-1/2 p-2 px-6 -translate-x-1/2 bg-white rounded-3xl mx-auto"
+    >
+      <div class="flex items-center justify-between">
+        <!-- Left section with logo -->
+        <div class="flex items-center gap-2">
+          <!-- Circle logo -->
+          <div
+            class="sm:w-[30px] w-[25px] sm:h-[30px] h-[25px] bg-gray-800 rounded-full"
+          ></div>
+          <!-- New logo, will change based on mobile menu state -->
+          <img
+            src="./images/Bouncing Ball 3D.png"
+            alt="New Logo"
+            class=""
+            id="logo"
+          />
+        </div>
 
-     <!-- navbar -->
-     <nav
-     class="w-[80%] z-[10] fixed text-black top-12 left-1/2 p-2 px-6 -translate-x-1/2 bg-white rounded-3xl mx-auto"
-   >
-     <div class="flex items-center justify-between">
-       <!-- Left section with logo -->
-       <div class="flex items-center gap-2">
-         <!-- Circle logo -->
-         <div
-           class="sm:w-[30px] w-[25px] sm:h-[30px] h-[25px] bg-gray-800 rounded-full"
-         ></div>
-         <!-- New logo, will change based on mobile menu state -->
-         <img
-           src="./images/Bouncing Ball 3D.png"
-           alt="New Logo"
-           class=""
-           id="logo"
-         />
-       </div>
+        <!-- Desktop menu -->
+        <div class="xl:flex hidden w-fit gap-10">
+          <ul class="flex items-center gap-4">
+            <a
+              class="hover:text-blue-500 transition hover:border-b border-blue-500"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="hover:text-blue-500 transition hover:border-b border-blue-500"
+              href="index.html#game"
+              >Game</a
+            >
+            <a
+              class="hover:text-blue-500 transition hover:border-b border-blue-500"
+              href="index.html#features"
+              >Features</a
+            >
+            <a
+              class="text-blue-500 transition border-b border-blue-500"
+              href="privacy-policy.html"
+              >Privacy Policy</a
+            >
+            <a
+              class="hover:text-blue-500 transition hover:border-b border-blue-500"
+              href="terms&conditions.html"
+              >Terms & Conditons</a
+            >
+          </ul>
+          <button
+            class="bg-[#4FC3F7] px-4 py-2 hover:bg-blue-500 transition rounded-full text-white"
+          >
+            Download Now
+          </button>
+        </div>
 
-       <!-- Desktop menu -->
-       <div class="lg:flex hidden w-fit gap-10">
-         <ul class="flex items-center gap-4">
-           <a
-             class="hover:text-blue-500 transition hover:border-b border-blue-500"
-             href="index.html"
-             >Home</a
-           >
-           <a
-             class="text-blue-500 transition border-b border-blue-500"
-             href="privacy-policy.html"
-             >Privacy Policy</a
-           >
-           <a
-             class="hover:text-blue-500 transition hover:border-b border-blue-500"
-             href="terms&conditions.html"
-             >Terms & Conditons</a
-           >
-         </ul>
-         <button
-           class="bg-[#4FC3F7] px-4 py-2 hover:bg-blue-500 transition rounded-full text-white"
-         >
-           Download Now
-         </button>
-       </div>
+        <!-- Mobile menu toggle (hamburger) -->
+        <div
+          class="xl:hidden flex items-center text-2xl pr-3 justify-center cursor-pointer"
+          id="mobileMenuToggle"
+        >
+          <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+        </div>
+      </div>
 
-       <!-- Mobile menu toggle (hamburger) -->
-       <div
-         class="lg:hidden flex items-center text-2xl pr-3 justify-center cursor-pointer"
-         id="mobileMenuToggle"
-       >
-         <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
-       </div>
-     </div>
-
-     <!-- Mobile menu links (hidden by default) -->
-     <div
-       class="lg:hidden flex flex-col text-center justify-center mt-3 gap-2 hidden"
-       id="mobileMenu"
-     >
-       <ul class="flex flex-col gap-2">
-         <li
-           class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
-         >
-           <a href="index.html">Home</a>
-         </li>
-         <li
-           class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
-         >
-           <a href="privacy-policy.html">Privacy Policy</a>
-         </li>
-         <li
-           class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
-         >
-           <a href="terms&conditions.html">Terms & Conditions</a>
-         </li>
-       </ul>
-       <button
-         class="bg-[#4FC3F7] px-4 py-2 rounded-full text-white hover:bg-[#4F93F9]"
-       >
-         Download Now
-       </button>
-     </div>
-   </nav>
-
+      <!-- Mobile menu links (hidden by default) -->
+      <div
+        class="xl:hidden flex flex-col text-center justify-center mt-3 gap-2 hidden"
+        id="mobileMenu"
+      >
+        <ul class="flex flex-col gap-2">
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="index.html#game">Game</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="index.html#features">Featuresf</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li
+            class="border-b w-full py-2 cursor-pointer hover:bg-[#4FC3F7] hover:rounded-full"
+          >
+            <a href="terms&conditions.html">Terms & Conditions</a>
+          </li>
+        </ul>
+        <button
+          class="bg-[#4FC3F7] px-4 py-2 rounded-full text-white hover:bg-[#4F93F9]"
+        >
+          Download Now
+        </button>
+      </div>
+    </nav>
 
     <!-- Privacy Policy -->
     <div
@@ -385,8 +404,6 @@
         </li>
       </ul>
     </div>
-
-
 
     <script src="./script.js"></script>
   </body>
