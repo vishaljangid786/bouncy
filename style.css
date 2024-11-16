@@ -14,10 +14,10 @@ body {
 }
 
 .bg-gray {
-  background: url('./images/BB\ 1.webg');
+  background: url('./images/Untitled\ design.png');
   border-radius: 20px;
   background-size: cover; /* Ensures the entire image fits */
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 .bg-grayi {
