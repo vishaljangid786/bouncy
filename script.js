@@ -118,11 +118,7 @@ tl.from('.hero-main', {
   .from('.hero-main-text-area-btns', {
     yPercent: -10,
     opacity: 0
-  }, "a")
-  .from('nav', {
-    yPercent: -10,
-    opacity: 0
-  }, "a")
+  })
 
 gsap.registerPlugin(ScrollTrigger);
 

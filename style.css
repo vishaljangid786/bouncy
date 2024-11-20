@@ -15,6 +15,9 @@ body {
   background: #3B82F6;
   color: white;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .bg-gray {
   background: url('./images/Untitled\ design.png');
