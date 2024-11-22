@@ -80,9 +80,9 @@
 <body>
   <div class="relative">
     <!-- flake -->
-    <div class="background absolute h-full bottom-0 top-0 left-0 right-0">
+    <!-- <div class="background absolute h-full bottom-0 top-0 left-0 right-0">
       <div class="bg-opacity"></div>
-    </div>
+    </div> -->
 
     <!-- navbar -->
     <nav
@@ -149,12 +149,12 @@
     </nav>
 
     <!-- Hero Section -->
-    <div id="home" class="hero relative z-[9] w-full flex justify-center lg:h-[100vh]">
+    <div id="home" class="hero relative z-[9] w-full flex justify-center lg:h-[100vh] h-[90vh]">
       <div
         class="w-[94%] hero-main transition relative hover:scale-[1.01] pb-8 bg-gray-500 hover:drop-shadow-[0_0px_20px_rgba(255,255,255)] flex flex-col lg:flex-row lg:items-start items-center justify-between mt-10 lg:h-[90%] rounded-3xl pt-10 lg:pt-40">
         <div class="absolute top-0 left-0 w-full h-full bg-gray"></div>
         <div class="flex justify-center hero-main-text-area z-[999] text-black">
-          <div class="mt-10 w-full lg:w-2/3 flex flex-col gap-6 text-center lg:text-left items-center">
+          <div class="mt-10 w-full lg:w-2/3 flex flex-col gap-6 lg:px-0 px-10 text-center lg:text-left items-center">
             <h1 class="text-3xl lg:text-4xl max-w-2xl mt-10 spicy-rice">
               Bounce, Run, and Conquer the Sky with Bouncing Ball 3D!
             </h1>
@@ -205,7 +205,7 @@
     <div id="game" class="min-h-screen relative z-[1] w-full lg:flex flex-col lg:flex-row">
       <div class="left w-full lg:w-1/2 hover:scale-[1.02] transition flex items-center justify-center">
         <img src="./images/Rectangle 23.png"
-          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_20px_rgba(255,255,255)] cursor-pointer rounded-3xl sm:w-fit lg:w-[50%] mt-10 w-[90%] h-[60%] object-center"
+          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_20px_rgba(255,255,255)] cursor-pointer rounded-3xl max-w-[400px] sm:w-fit lg:w-[50%] mt-10 w-[90%] h-[60%] object-center"
           alt="Bouncing Ball" />
       </div>
 
@@ -300,19 +300,16 @@
       </div>
 
       <div class="img-container relative z-[1] flex-wrap flex items-center justify-around gap-10 mt-40 px-10 lg:px-20">
-        <!-- Image 1 -->
         <img src="./images/Rectangle 20.png"
-          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_10px_rgba(255,255,255)] cursor-pointer w-full max-w-[390px] h-auto transition"
+          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_10px_rgba(255,255,255)] cursor-pointer h-auto transition"
           alt="Bouncing Ball" />
 
-        <!-- Image 2 -->
         <img src="./images/Rectangle 21.png"
-          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_10px_rgba(255,255,255)] cursor-pointer w-full max-w-[390px] h-auto transition lg:-translate-y-10"
+          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_10px_rgba(255,255,255)] cursor-pointer h-auto transition xxl:mb-20 mb-0"
           alt="Bouncing Ball" />
 
-        <!-- Image 3 -->
         <img src="./images/Rectangle 22.png"
-          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_20px_rgba(255,255,255)] cursor-pointer w-full max-w-[390px] h-auto transition"
+          class="hover:scale-[1.02] hover:drop-shadow-[0_0px_20px_rgba(255,255,255)] cursor-pointer h-auto transition"
           alt="Bouncing Ball" />
       </div>
     </div>
@@ -401,7 +398,6 @@
             <p class="lg:text-3xl text-xl ">Efforts and Love By Team Sell Tech IND. Productions</p>
           </div>
           <div class="flex flex-col sm:flex-row justify-between w-full justify-around flex-wrap gap-10 bg-[#5CE1E6]">
-            <!-- Left Section -->
             <div class="flex px-5 flex-col gap-4 sm:w-1/5 w-full items-center sm:items-start">
               <div class="flex items-center gap-2">
                 <img src="./images/BB 3D New Logo.png" class="w-[40px] h-[40px] rounded-full">
@@ -424,7 +420,6 @@
               </div>
             </div>
 
-            <!-- Middle Section (Company Links) -->
             <div class="flex flex-col gap-4 sm:w-1/5 w-full sm:items-start items-center">
               <h1 class="text-blue-500 font-semibold text-lg sm:text-xl">
                 COMPANY
@@ -438,9 +433,7 @@
                 <a href="terms&conditions.html" class="hover:text-blue-500">Terms & Conditions</a>
               </div>
             </div>
-            <!-- right div -->
             <div class="flex px-5 flex-col md:flex-row justify-between">
-              <!-- Contact Form Section -->
               <div class="mb-8 md:mb-0">
                 <h2 class="text-2xl text-blue-500 font-semibold mb-4">
                   Get in Touch
@@ -450,7 +443,6 @@
                   send us an email!
                 </p>
 
-                <!-- Email Input Form -->
                 <form action="" method="POST" class="flex flex-col gap-3 mb-5 sm:w-96 w-full"
                   onsubmit="sendMail(event)">
                   <input type="email" name="email" id="email" required placeholder="Enter your email"
